@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Roboto', 'Sans Serif';
+}
+
+.app {
+    width: 100%;
+    margin: auto;
+    max-width: 480px;
+}
+
+.some-content {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+}
+
+.search-container {
+    padding: 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.search-container>.search-input {
+    width: 100%;
+    line-height: 1.41;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+}
+
+.search-container>.search-items {
+    position: absolute;
+    width: calc(100% - 30px);
+    overflow-y: auto;
+    max-height: 300px;
+}
+.search-container>.search-items>.search-item {
+    padding: 5px 15px;
+    display: flex;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+}
+
+.search-container>.search-items>.search-item.active-item {
+    color: #fff;
+    background-color: #1e47ce;
+}
+
+.search-item>.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.search-item>.login {
+    padding-left: 15px;
+    width: calc(100% - 40px);
+}
